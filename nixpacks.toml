@@ -1,0 +1,10 @@
+# nixpacks.toml
+
+[phases.setup]
+# Railway-কে বলা হচ্ছে যেন পাইথনের পাশাপাশি Firefox এবং wget ইনস্টল করে
+aptPks = ["firefox", "wget"]
+nixPkgs = ["geckodriver"]
+
+[start]
+# বটটি চালানোর কমান্ড
+cmd = "python bot.py"
